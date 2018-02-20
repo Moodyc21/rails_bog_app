@@ -38,6 +38,20 @@ def update
 
 end
 
+def destroy 
+
+    @creature_id = params[:id]
+
+    @creature = Creature.find_by_id(@creature_id)
+
+    @creature.destroy
+
+    render json: {
+        msg: "Successfully Deleted"
+    }
+
+end
+
 private
 
 def creature_params
