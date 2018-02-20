@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Creature.destroy_all
+
+
+Creature.create({name: "Luke", description: "Jedi"})
+Creature.create({name: "Darth Vader", description: "Father of Luke"})
+Creature.create({name: "R2D2", description: "Short white robot"})
+Creature.create({name: "C3PO", description: "Tall Gold robot"})
+Creature.create({name: "Chewbaca", description: "Tall hairy guy"})
+Creature.create({name: "Princess Laya", description: "She is a princess and beautiful."})
